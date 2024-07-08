@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+body {
+    font-family: "Source Code Pro", monospace;
+    background-color: black;
+    color: aqua;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  header h1 img {
+    /* Style the image size and position within the heading */
+    width: 200px;  /* Adjust as needed */
+    height: auto;
+    vertical-align: middle;  /* Align image vertically within the text */
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    
+  }
+  
+  
+  section {
+    padding: 20px;
+   
+  }
+  
+  .work-item {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .work-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+
+  .app_container{
+    text-align: center;
+  }
+
+  /*  Animation css  */
+  #hero h6 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
