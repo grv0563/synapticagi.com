@@ -9,113 +9,35 @@ navLinks.forEach(link => {
   });
 });
 
-// function getRealTimeMilliseconds() {
-//   // Get the current time in milliseconds
-//   const now = new Date().getTime();
-//   // const today_date= new Date.getDate();
-//   const i_was_born = new Date("2001-04-02");
-//   // const age =today_date -i_was_born;
-//   // console.log(age);
-//   // console.log(today_date)
-//   // console.log(i_was_born);
-
-//   // Update a DOM element (optional)
-//   // You can replace this with your desired output method (e.g., console.log)
-//   const outputElement = document.getElementById("age");
-//   if (outputElement) {
-
-//     // outputElement.textContent = "23."+now +" Years";
-//     outputElement.textContent = now +" Years";
-
-//   }
-// }
-
-// // Call the function initially to display the current milliseconds
-// getRealTimeMilliseconds();
-
-// // Call the function repeatedly for updates (consider limitations)
-// setInterval(getRealTimeMilliseconds, 1); // Aim for 1 millisecond interval
-
-// function calculateAge(birthDate) {
-//   const birthDateObj = new Date(birthDate);
-//   const today = new Date();
-//   let age = today.getFullYear() - birthDateObj.getFullYear();
-//   const month = today.getMonth();
-//   const day = today.getDate();
-
-//   if (month < birthDateObj.getMonth() || (month === birthDateObj.getMonth() && day < birthDateObj.getDate())) {
-//     age--;
-//   }
-
-//   return age;
-// }
-
-// const birthDateStr = "2001-04-02";
-// const age = calculateAge(birthDateStr);
-// console.log("Age:", age, "years old");
+function displayText(){
 
 
+const atarai_text= `
+               AAA                tttt                                                                   AAA               IIIIIIIIII
+              A:::A            ttt:::t                                                                  A:::A              I::::::::I
+             A:::::A           t:::::t                                                                 A:::::A             I::::::::I
+            A:::::::A          t:::::t                                                                A:::::::A            II::::::II
+           A:::::::::A   ttttttt:::::ttttttt      aaaaaaaaaaaaa  rrrrr   rrrrrrrrr                   A:::::::::A             I::::I  
+          A:::::A:::::A  t:::::::::::::::::t      a::::::::::::a r::::rrr:::::::::r                 A:::::A:::::A            I::::I  
+         A:::::A A:::::A t:::::::::::::::::t      aaaaaaaaa:::::ar:::::::::::::::::r               A:::::A A:::::A           I::::I  
+        A:::::A   A:::::Atttttt:::::::tttttt               a::::arr::::::rrrrr::::::r             A:::::A   A:::::A          I::::I  
+       A:::::A     A:::::A     t:::::t              aaaaaaa:::::a r:::::r     r:::::r            A:::::A     A:::::A         I::::I  
+      A:::::AAAAAAAAA:::::A    t:::::t            aa::::::::::::a r:::::r     rrrrrrr           A:::::AAAAAAAAA:::::A        I::::I  
+     A:::::::::::::::::::::A   t:::::t           a::::aaaa::::::a r:::::r                      A:::::::::::::::::::::A       I::::I  
+    A:::::AAAAAAAAAAAAA:::::A  t:::::t    tttttta::::a    a:::::a r:::::r                     A:::::AAAAAAAAAAAAA:::::A      I::::I  
+   A:::::A             A:::::A t::::::tttt:::::ta::::a    a:::::a r:::::r                    A:::::A             A:::::A   II::::::II
+  A:::::A               A:::::Att::::::::::::::ta:::::aaaa::::::a r:::::r                   A:::::A               A:::::A  I::::::::I
+ A:::::A                 A:::::A tt:::::::::::tt a::::::::::aa:::ar:::::r                  A:::::A                 A:::::A I::::::::I
+AAAAAAA                   AAAAAAA  ttttttttttt    aaaaaaaaaa  aaaarrrrrrr                 AAAAAAA                   AAAAAAAIIIIIIIIII
 
-function calculateAge(birthDate) {
-  // Set the birth date
-  const birthDateObj = new Date(2001, 4, 2); // Year, Month (0-indexed), Day
+`
 
-  // Get the current date and time in milliseconds
-  const now = Date.now();
+const atarai=document.getElementById("atarai-animation");
+atarai.textContent=atarai_text;
 
-  // Calculate the difference in milliseconds
-  const ageDiffMs = now - birthDateObj.getTime();
-
-  // Calculate age in years
-  const ageYears = Math.floor(ageDiffMs / (1000 * 60 * 60 * 24 * 365));
-
-  // Calculate remaining milliseconds after years are accounted for
-  const remainingMsAfterYears = ageDiffMs % (1000 * 60 * 60 * 24 * 365);
-
-  // Calculate days from remaining milliseconds
-  const days = Math.floor(remainingMsAfterYears / (1000 * 60 * 60 * 24));
-
-  // Calculate remaining milliseconds after days are accounted for
-  const remainingMsAfterDays = remainingMsAfterYears % (1000 * 60 * 60 * 24);
-
-  // Calculate hours from remaining milliseconds
-  const hours = Math.floor(remainingMsAfterDays / (1000 * 60 * 60));
-
-  // Calculate remaining milliseconds after hours are accounted for
-  const remainingMsAfterHours = remainingMsAfterDays % (1000 * 60 * 60);
-
-  // Calculate minutes from remaining milliseconds
-  const minutes = Math.floor(remainingMsAfterHours / (1000 * 60));
-
-  // Calculate milliseconds from remaining milliseconds
-  const milliseconds = remainingMsAfterHours % (1000);
-
-  // Return the age object
-  return {
-    years: ageYears,
-    days: days,
-    hours: hours,
-    minutes: minutes,
-    milliseconds: milliseconds,
-  };
-}
-
-// Example usage
-function displayAge(){
-  const myage = calculateAge();
-  console.log(
-    `Age: ${myage.years} years, ${myage.days} days, ${myage.hours} hours, ${myage.minutes} minutes, ${myage.milliseconds} milliseconds`
-  );
-    const outputElement = document.getElementById("age");
-  if (outputElement) {
-
-    // outputElement.textContent = "23."+now +" Years";
-    outputElement.textContent = `${myage.years} years, ${myage.days +23} days, ${myage.hours} hours, ${myage.minutes} minutes, ${myage.milliseconds} milliseconds`;
-  }
- 
 }
  // displayAge();
- setInterval(displayAge,1)
+ setInterval(displayText,1)
 
 
 
