@@ -1,0 +1,11 @@
+.research-container{
+    display: flex;
+    height: 100%;
+    
+}
+.research-container .research-mainarea{
+    padding-left: 20px;
+    width: 100%;
+    
+   
+}
