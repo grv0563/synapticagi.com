@@ -1,12 +1,12 @@
 
 
 .App {
-  background-color: black;
+  
   color: white;
   text-align: center;
   text-align: justify;
-  /* margin-left: 20px;
-  margin-right: 20px; */
+  margin-left: 300px;
+  margin-right: 300px;
   /* font-family:sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -15,10 +15,12 @@
   
 }
 pre {
+  text-align: center;
   color: aqua;
 }
-.App footer{
-  text-align: center;
+.App footer {
+ 
+  /* text-align: center; */
   overflow: hidden;
   position: fixed;
   bottom: 0;

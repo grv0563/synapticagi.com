@@ -1,12 +1,9 @@
 import React from "react";
-import SideBar from "../../components/SideBar";
 import "./styles.css";
 function Accident() {
   return (
     <div className="page-container">
-      <div className="research-sidebar">
-        <SideBar />
-      </div>
+      
       <div className="research-mainarea">
         <h2>Heading</h2>
         <p>

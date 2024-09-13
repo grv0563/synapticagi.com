@@ -1,11 +1,10 @@
 
 .home-container {
-    background-color: black;
+    /* background-color: black; */
     color: white;
     text-align: center;
     text-align: justify;
-    margin-left: 20px;
-    margin-right: 20px;
+    
     /* font-family:sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -14,11 +13,16 @@
     
   }
   pre {
+    
     color: aqua;
+  }
+  .home-container .home-main .links{
+    padding-bottom: 50px;
   }
   .home-container .home-main .links a{
     display: flex;
     padding-top: 20px;
     text-decoration: none;
+    
   }
  

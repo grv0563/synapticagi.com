@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css'
-const text = `
+const text = `  
                AAA                 SSSSSSSSSSSSSSS   IIIIIIIIII
               A:::A              SS:::::::::::::::   I::::::::I
              A:::::A            S:::::SSSSSS::::::   I::::::::I
@@ -14,7 +14,7 @@ const text = `
      A:::::::::::::::::::::A                S:::::S    I::::I  
     A:::::AAAAAAAAAAAAA:::::A               S:::::S    I::::I  
    A:::::A             A:::::A  SSSSSSS     S:::::S  II::::::II
-  A:::::A               A:::::A  S::::::SSSSSS:::::S I::::::::I
+  A:::::A               A:::::A S::::::SSSSSS:::::S  I::::::::I
  A:::::A                 A:::::S  :::::::::::::::SS  I::::::::I
 AAAAAAA                   AAAAAAS  SSSSSSSSSSSSSS    IIIIIIIIII
 `;
@@ -23,12 +23,12 @@ function Home() {
   return (
     <div className='home-container'>
        <div id="app-text">
-        <h6>
+        <p>
           <pre>{text}</pre>
-        </h6>
+        </p>
       </div>
       <div className='home-main'>
-        <p>SynapticAGI - Artificial Super Intelligence</p>
+        <h3>SynapticAGI - Artificial Super Intelligence</h3>
         <p>
           Objective of building Powerfull AI or AGI is not to eliminate humans
           or replace humans. Infact we like to work but there main problem is
