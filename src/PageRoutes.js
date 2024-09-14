@@ -13,6 +13,7 @@ import Problem_4 from './pages/research-pages/Problem_4';
 import Abstraction from './pages/research-pages/Abstraction';
 import Conclusion from './pages/research-pages/Conclusion';
 import Accident from './pages/research-pages/Accident';
+import Future from './pages/research-pages/Future';
 
 const router=createBrowserRouter([
   {path: '/', element: <Home/>},
@@ -27,6 +28,7 @@ const router=createBrowserRouter([
   {path: '/problem4', element: <Problem_4/>},
   {path: '/abstract', element: <Abstraction/>},
   {path: '/conclusion', element: <Conclusion/>},
+  {path: '/future', element: <Future/>},
 
 ])
 

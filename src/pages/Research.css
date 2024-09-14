@@ -1,12 +1,11 @@
 .research-container{
     display: flex;
     height: 100%;
+    padding-right: 10px;
+    padding-left: 10px;    
     
 }
-.research-container .research-mainarea a{
+.research-container .research-mainarea a {
     display: flex;
-    padding-left: 20px;
-    width: 100%;
     
-   
 }

@@ -1,28 +1,42 @@
-
 .home-container {
-    /* background-color: black; */
-    color: white;
-    text-align: center;
-    text-align: justify;
-    
-    /* font-family:sans-serif;
+  /* background-color: black; */
+  color: white;
+  text-align: center;
+  text-align: justify;
+
+  /* font-family:sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal; */
-    
-    
-  }
-  pre {
-    
-    color: aqua;
-  }
-  .home-container .home-main .links{
-    padding-bottom: 50px;
-  }
-  .home-container .home-main .links a{
-    display: flex;
-    padding-top: 20px;
-    text-decoration: none;
-    
-  }
+}
  
+h6 {
+  color: aqua;
+  overflow: hidden;
+   /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(0, 5, 5); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end);
+  
+}
+pre{
+  font-size: 12;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.home-container .home-main .links {
+  padding-bottom: 50px;
+}
+.home-container .home-main .links a {
+  display: flex;
+  padding-top: 20px;
+  text-decoration: none;
+}

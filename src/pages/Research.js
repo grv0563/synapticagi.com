@@ -6,8 +6,6 @@ function Research() {
     <>
       <h2> Problem Evolution to Super Intelligence</h2>
       <div className="research-container">
-        <div className="research-sidebar">
-        </div>
         <div className="research-mainarea">
           <a>Topics</a>
           <a href="/preface">Preface</a>
@@ -19,6 +17,7 @@ function Research() {
           <a href="/problem4">Type 4 - Problems: Hunam Problems - Agents of vulnerabilities, Love and compassion</a>
           <a href="/abstract">Abstraction in Human problem space in current state of human regime</a>
           <a href="/conclusion">Conclusion</a>
+          <a href="/future">Future of Humanity</a>
         </div>
       </div>
     </>

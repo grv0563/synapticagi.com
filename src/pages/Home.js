@@ -18,14 +18,24 @@ const text = `
  A:::::A                 A:::::S  :::::::::::::::SS  I::::::::I
 AAAAAAA                   AAAAAAS  SSSSSSSSSSSSSS    IIIIIIIIII
 `;
+const animation=()=>{
+  const animation =document.getElementById("animation-text");
+  
+  animation.innerText={text};
+  repeat_animation()
+}
+const repeat_animation=()=>{
+  
+  animation();
+}
 
 function Home() {
   return (
     <div className='home-container'>
        <div id="app-text">
-        <p>
+        <h6 onLoad={repeat_animation} id='animation-text'>
           <pre>{text}</pre>
-        </p>
+        </h6>
       </div>
       <div className='home-main'>
         <h3>SynapticAGI - Artificial Super Intelligence</h3>
@@ -47,6 +57,7 @@ function Home() {
         </p>
         <div className='links'>
         <a href='/research'>Research</a>
+        
         
         <a href="/contact" style={{color:"blue"}}>Contact</a>
         
