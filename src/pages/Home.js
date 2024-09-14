@@ -32,8 +32,8 @@ const repeat_animation=()=>{
 function Home() {
   return (
     <div className='home-container'>
-       <div id="app-text">
-        <h6 onLoad={repeat_animation} id='animation-text'>
+       <div className='animation-container' id="app-text">
+        <h6 id='animation-text'>
           <pre>{text}</pre>
         </h6>
       </div>
