@@ -4,7 +4,8 @@ import "./Research.css";
 function Research() {
   return (
     <>
-      <h2> Problem Evolution to Super Intelligence</h2>
+    <h3 style={{backgroundColor:"aqua", color:"black", textAlign:"center"}}>Reseach is under Construction </h3>
+      <h2> Alien's Research on Humanity on Earth</h2>
       <div className="research-container">
         <div className="research-mainarea">
           <h3 style={{ textAlign: "center" }}>I ❤️ simple things not easy !</h3>
