@@ -1,5 +1,6 @@
 import "./App.css";
 import PageRoutes from "./PageRoutes";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

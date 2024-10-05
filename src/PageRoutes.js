@@ -15,6 +15,7 @@ import Conclusion from './pages/research-pages/Conclusion';
 import Accident from './pages/research-pages/Accident';
 import Future from './pages/research-pages/Future';
 
+
 const router=createBrowserRouter([
   {path: '/', element: <Home/>},
   {path: '/research', element: <Research/>},
